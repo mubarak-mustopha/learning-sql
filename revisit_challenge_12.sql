@@ -1,3 +1,12 @@
+-- Q4
+SELECT cust_email
+FROM Customers
+INNER JOIN Orders
+ON Customers.cust_id = Orders.cust_id
+INNER JOIN Orderitems
+ON Orders.order_num = Orderitems.order_num
+WHERE prod_id = "BR01";
+
 -- Q3
 SELECT prod_id,
 		order_date
